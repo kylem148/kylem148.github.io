@@ -1,8 +1,9 @@
 :root {
   /* variables */
-  --cg-black: rgb(30, 32, 32);
-  --cg-blue: rgb(36, 94, 255);
-  --cg-grey: rgb(243, 243, 243);
+  --cg-black: rgb(62, 64, 64);
+  --cg-green: rgb(55, 134, 88);
+  --cg-grey: rgb(242, 242, 242);
+  --cg-moss: rgb(147, 169, 151);
   --cg-white: rgb(255, 255, 255);
 }
 
@@ -11,7 +12,7 @@ html {
 }
 
 body {
-  background: var(--cg-grey);
+  background: var(--cg-moss);
   position: relative;
   min-height: 100vh;
   padding: 0;
@@ -63,13 +64,22 @@ body {
   font-family: monospace;
 }
 
+#resume-body {
+  background: var(--cg-grey);
+  position: relative;
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+  font-family: monospace;
+}
+
 .navbar a:hover {
-  color: var(--cg-blue);
+  color: var(--cg-green);
   text-decoration: underline;
 }
 
 .navbar a:active {
-  color: var(--cg-blue);
+  color: var(--cg-green);
 }
 
 .logo a {
@@ -152,7 +162,7 @@ main {
 }
 
 .project-details a:hover {
-  color: var(--cg-blue);
+  color: var(--cg-green);
   text-decoration: underline;
 }
 
@@ -215,7 +225,7 @@ main {
 }
 
 .button:hover {
-  background-color: var(--cg-blue);
+  background-color: var(--cg-green);
 }
 
 .resume h2 {
