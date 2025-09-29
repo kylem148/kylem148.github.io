@@ -2,6 +2,7 @@
   /* variables */
   --cg-black: rgb(62, 64, 64);
   --cg-green: rgb(55, 134, 88);
+  --cg-darkgreen: rgb(12, 63, 28);
   --cg-grey: rgb(242, 242, 242);
   --cg-moss: rgb(147, 169, 151);
   --cg-white: rgb(255, 255, 255);
@@ -58,24 +59,20 @@ body {
   color: var(--cg-white);
   font-weight: bold;
   margin: 0 12px;
-  text-decoration: none;
+  border-bottom: 2px solid transparent;
   letter-spacing: 2px;
-
   font-family: monospace;
-}
+  display: inline-block;
+  text-decoration: none;
 
-#resume-body {
-  background: var(--cg-grey);
-  position: relative;
-  min-height: 100vh;
-  padding: 0;
-  margin: 0;
-  font-family: monospace;
+  cursor: pointer;
+  transition: color 0.2s ease-in-out, transform 0.2s ease-in-out;
 }
 
 .navbar a:hover {
   color: var(--cg-green);
-  text-decoration: underline;
+  border-bottom: 2px solid var(--cg-green);
+  transform: scale(1.1);
 }
 
 .navbar a:active {
@@ -87,7 +84,8 @@ body {
 }
 
 .logo a:hover {
-  text-decoration: None;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
 }
 
 main {
@@ -113,8 +111,15 @@ main {
   max-width: 100%;
   margin: 1em 0 2em 0;
 
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+
   /* Debug border */
   /* border: 2px solid blue; */
+}
+
+.project:hover {
+  transform: scale(1.02);
 }
 
 .item-link {
@@ -185,13 +190,24 @@ main {
   background-color: #f8f8f8;
   border: 1px solid #ccc;
   border-radius: 5px;
-  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+
+  cursor: pointer;
+  transition: box-shadow 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.about:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
 }
 
 .about-image img {
   max-width: 300px;
   border-radius: 3px;
-  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.about strong {
+  color: var(--cg-darkgreen);
 }
 
 .about-text {
@@ -222,14 +238,48 @@ main {
   text-align: center;
 
   border-radius: 2px;
+
+  cursor: pointer;
+  transition: background-color 0.2 ease-in-out, transform 0.2s ease-in-out;
 }
 
 .button:hover {
   background-color: var(--cg-green);
+  transform: scale(1.1);
 }
 
 .resume h2 {
   font-family: Georgia;
+}
+
+.resume-body {
+  background: var(--cg-grey);
+  position: relative;
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+  font-family: monospace;
+}
+
+.resume-button {
+  background-color: rgb(164, 159, 159);
+  border: none;
+  color: var(--cg-white);
+
+  font-family: monospace;
+
+  padding: 5px 7px;
+  text-align: center;
+
+  border-radius: 2px;
+
+  cursor: pointer;
+  transition: background-color 0.1s ease-in-out, transform 0.1s ease-in-out;
+}
+
+.resume-button:hover {
+  background-color: var(--cg-moss);
+  transform: scale(1.05);
 }
 
 /* CSS for contact form */
