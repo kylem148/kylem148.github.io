@@ -4,7 +4,8 @@
   --cg-green: rgb(55, 134, 88);
   --cg-darkgreen: rgb(12, 63, 28);
   --cg-grey: rgb(242, 242, 242);
-  --cg-moss: rgb(147, 169, 151);
+  --cg-moss: rgb(190, 207, 193);
+  --cg-darkmoss: rgb(102, 117, 104);
   --cg-white: rgb(255, 255, 255);
 }
 
@@ -227,6 +228,15 @@ main {
 }
 
 /* CSS for Blog page */
+
+.blog {
+  background-color: var(--cg-darkmoss);
+}
+
+.blog-logo {
+  color: white;
+}
+
 .card-list {
   display: flex;
   padding: 3rem;
@@ -248,7 +258,7 @@ main {
 
   padding: 1.5rem;
   border-radius: 16px;
-  background: #abb3af;
+  background: #dce2df;
   box-shadow: -1rem 0 3rem #465146;
 
   transition: transform 0.2s ease;
