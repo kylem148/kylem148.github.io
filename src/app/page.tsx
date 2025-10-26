@@ -5,7 +5,6 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Title from "../components/Title";
 import AboutMe from "../sections/AboutMe";
-import Blogs from "../sections/Blogs";
 import Resume from "../sections/Resume";
 import Footer from "../components/Footer";
 import Navbar from "@/components/Navbar";
@@ -53,7 +52,6 @@ export default function Home() {
         <div>
           <Navbar />
           <Resume />
-          <Blogs />
           <ContactParallax />
           <Contact />
           <Footer />
