@@ -1,10 +1,8 @@
 import type { NextConfig } from "next";
+module.exports = { output: "export" };
 
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  output: "export",
-  images: { unoptimized: true },
-  trailingSlash: true, // helpful for GitHub Pages
+const nextConfig: NextConfig = {
+  /* config options here */
 };
-module.exports = nextConfig;
+
 export default nextConfig;
