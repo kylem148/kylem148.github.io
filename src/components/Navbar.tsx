@@ -37,12 +37,6 @@ function Navbar() {
         >
           RESUME
         </a>
-        <a
-          className="text-base tracking-wider transition-colors hover:text-gray-300 z-50"
-          href="#blog"
-        >
-          BLOG
-        </a>
       </nav>
 
       <a
@@ -79,12 +73,6 @@ function Navbar() {
             href="#resume"
           >
             RESUME
-          </a>
-          <a
-            className="text-base tracking-wider transition-colors hover:text-gray-300 z-50"
-            href="#blog"
-          >
-            BLOG
           </a>
           <a
             className="text-base tracking-wider transition-colors hover:text-gray-300 z-50"
