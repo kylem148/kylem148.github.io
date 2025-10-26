@@ -37,12 +37,7 @@ function BlogList() {
             <header className="flex flex-col gap-1">
               <p className="text-sm/5 text-neutral-300">{blog.date}</p>
               <h2 className="text-lg font-semibold">{blog.title}</h2>
-              <Link
-                href={`/blogs/${blog.slug}`}
-                className="text-[0.95rem] text-green-700 hover:text-green-800"
-              >
-                Click here to view…
-              </Link>
+              
               <img
                 src={blog.image}
                 alt={blog.imageAlt}
